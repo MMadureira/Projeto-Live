@@ -1,12 +1,12 @@
-export default function ItemList(props) {
+export default function ItemList({ url, imgUrl, alt }) {
     return (
         <li>
             <a
                 target="_blank"
-                href={props.url}>
-                <img src={props.imgUrl} 
-                alt={props.alt} 
-            />
+                href={url}>
+                <img src={imgUrl}
+                    alt={alt}
+                />
             </a>
         </li>
     );
